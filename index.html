@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Form</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/static/images/icon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="first">
+                <div class="heading">
+                    <p>Welcome to <br>&nbsp;&nbsp;&nbsp;<span>Code Hacks</span></p>
+                </div>
+                <div class="social">
+                    <div class="mail"><img src="/static/images/gmail.png" alt="">
+                        <p>codehacks.com</p>
+                    </div>
+                    <div class="phone"><img src="/static/images/phone.png" alt="">
+                        <p>+91 7310 7890 40</p>
+                    </div>
+                    <div class="loc"><img src="/static/images/loc.png" alt="">
+                        <p>Latakunj Colony, Agra</p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <a href="http://www.linkedin.com/in/dheerajkriplani" target="_blank"><img
+                            src="/static/images/link.png" alt=""></a>
+                    <a href="https://wa.me/7310789040" target="_blank"><img src="/static/images/whats.png" alt=""></a>
+                    <a href=""><img src="/static/images/insta.png" alt=""></a>
+
+                </div>
+            </div>
+            <form class="second" action="/signin" method="post">
+                <div class="head"><a href="/index" id="signin">
+                        <p class="in">SIGN IN</p>
+                    </a>
+                    <a href="/index2" id="singnup">
+                        <p class="up">SIGN UP</p>
+                    </a>
+                </div>
+
+                <div class="name">
+                    <p class="yourname">Username</p>
+                    <input id="input-name" name="name" type="text" placeholder="Enter your username">
+                </div>
+                <div class="password">
+                    <p class="yourpassword">Password</p>
+
+                    <input type="text" id="input-password" name="pass" placeholder="Enter your password">
+                </div>
+                
+                <button class="signin">SIGN IN</button>
+                <div class="forget">
+                    <a href=""><p>Forget Password?</p></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

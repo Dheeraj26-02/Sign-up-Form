@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #fbb234;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 80px;
+    height: 500px;
+    width: 700px;
+    background-color: #2e3034;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 7px rgb(62, 59, 59);
+}
+
+.first {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 260px;
+}
+
+.heading {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+
+.heading p,
+span {
+    font-size: 40px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+span {
+    color:#FBB234;
+}
+.social{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.social img{
+    padding: 10px;
+
+    height: 25px;
+    width: 25px;
+    
+}
+
+.social p{
+    padding: 10px;
+
+    color: rgba(255, 255, 255, 0.59);
+}
+.social div{
+    display: flex;
+    flex-direction: row;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 260px;
+    height: 380px;
+    padding: 20px;
+    background-color: white;
+    box-shadow:2px 2px 7px black;
+    border-radius: 30px;
+}
+.profile{
+    display: flex;
+    margin-top: 20px;
+    padding: 40px;
+}
+.profile a{
+    padding: 20px;
+}
+.profile a :hover{
+    transition: .5s ease-in-out;
+    transform: scale(1.3);
+}
+
+.profile img{
+    width: 25px;
+    height: 25px;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    color: #2e3034;
+    justify-content: center;
+    font-size: 18px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+.head a{
+    padding: 25px;
+    text-decoration: none;
+    color: #2e3034;
+    font-weight: 400;
+    cursor: pointer;
+}
+.in:hover{
+    font-weight: 700;
+}
+
+.in::after{
+    display: flex;
+    content: "";
+    position: absolute;
+    left: 411px;
+    width: var(--inafter,0%);
+    height: 3px;
+    background-color:#FBB234;
+    border-radius: 30px;
+    transition: .2s linear;
+}
+
+.in:hover::after{
+    width: 12%;
+}
+.up:hover{
+    font-weight: 700;
+}
+.up::after{
+    display: flex;
+    content: "";
+    position: absolute;
+    left: 525px;
+    width: var(--upafter,0%);
+    height: 3px;
+    background-color:#FBB234;
+    border-radius: 30px;
+    transition: .2s linear;
+}
+.up:hover::after{
+    width: 12%;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+.name p{
+    color: rgba(0, 0, 0, 0.619);
+    font-size: 12px;
+    font-weight: 700;
+}
+input{
+    outline: none;
+    border: none;
+    padding-top: 8px;
+    width: 200px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.218);
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+.password p{
+    color: rgba(0, 0, 0, 0.619);
+    font-size: 12px;
+    font-weight: 700;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+.email p{
+    color: rgba(0, 0, 0, 0.619);
+    font-size: 12px;
+    font-weight: 700;
+}
+.keep{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 12px;
+    padding-left: 30px;
+}
+.tick{
+    margin: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 15px;
+}
+.signin{
+    margin-top: 50px;
+    height: 35px;
+    margin-left: 34px;
+    width: 200px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color:#FBB234;
+    cursor: pointer;
+    color: #2e3034;
+    font-weight: 700;
+    box-shadow: 1px 1px 5px black;
+}
+.forget{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.forget a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #2e3034;
+}
+@media screen and (max-width:450px) {
+    .container{
+        flex-direction: column;
+        height: 950px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        width: 320px;
+    }
+    .first{
+        width: 250px;
+    }
+    .second{
+        width: 250px;
+        height: 400px;
+    }
+}
